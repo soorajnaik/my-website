@@ -5,60 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sooraj Naik - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <h1>Sooraj Naik</h1>
-    <p>Electronics & Communication Engineer | Aspiring Cloud & Embedded Systems Engineer</p>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certs">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Sooraj Naik</h1>
+      <p>Electronics & Communication Engineer | Cloud & Embedded Enthusiast</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certs">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="card">
     <h2>About Me</h2>
-    <p>I am an Electronics and Communication Engineering student with interest in Cloud, Embedded Systems, and DevOps. I enjoy working on IoT projects and learning new technologies.</p>
-    <ul>
-      <li><b>Degree:</b> B.E in Electronics & Communication Engineering</li>
-      <li><b>Phone:</b> +91 1234567890</li>
-      <li><b>City:</b> Bengaluru, India</li>
-      <li><b>Email:</b> youremail@example.com</li>
-    </ul>
+    <p>I am an Electronics and Communication Engineering student with a passion for Cloud Computing, DevOps, and Embedded Systems. I love building IoT-based projects and solving real-world problems with technology.</p>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="card">
     <h2>Skills</h2>
     <ul class="skills-list">
-      <li>Python — 60%</li>
-      <li>Linux — 70%</li>
-      <li>AWS — 50%</li>
-      <li>C / C++ — 70%</li>
-      <li>Embedded Systems — 65%</li>
+      <li><span>Python</span><div class="bar"><div style="width:60%"></div></div></li>
+      <li><span>Linux</span><div class="bar"><div style="width:70%"></div></div></li>
+      <li><span>AWS</span><div class="bar"><div style="width:50%"></div></div></li>
+      <li><span>C / C++</span><div class="bar"><div style="width:70%"></div></div></li>
+      <li><span>Embedded Systems</span><div class="bar"><div style="width:65%"></div></div></li>
     </ul>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" class="card">
     <h2>Projects</h2>
     <h3>Weather Monitoring System</h3>
-    <p>A system to measure temperature, humidity, pressure, and rainfall using ESP32 and sensors, with output on LCD and mobile app.</p>
+    <p>Monitors temperature, humidity, pressure, and rainfall using ESP32 and sensors. Displays data on LCD and mobile app.</p>
     <p><b>Technologies:</b> ESP32, DHT11, BMP180, AWS, Blynk</p>
-    <p><a href="https://github.com/soorajnaik/my-project" target="_blank">View Project on GitHub</a></p>
+    <a href="https://github.com/soorajnaik/my-project" class="btn" target="_blank">View on GitHub</a>
   </section>
 
   <!-- Certificates -->
-  <section id="certs">
-    <h2>Certificates / Badges</h2>
+  <section id="certs" class="card">
+    <h2>Certificates</h2>
     <div class="certs">
       <img src="images/certificate1.png" alt="Certificate 1">
       <img src="images/certificate2.png" alt="Certificate 2">
@@ -66,18 +64,17 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="card">
     <h2>Contact</h2>
-    <p>Email: youremail@example.com</p>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
     <p>Phone: +91 1234567890</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Sooraj Naik</p>
+    <p>&copy; 2025 Sooraj Naik | Made with ❤️</p>
   </footer>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
