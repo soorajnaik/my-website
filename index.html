@@ -2,35 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First GitHub Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <h1>Welcome to My Website 🎉</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+    <div class="hero">
+      <h1>Your Name</h1>
+      <p>Electronics & Communication Engineer | Aspiring Cloud / Embedded Systems Developer</p>
+      <!-- Optional: Download Resume button -->
+      <a href="YourResume.pdf" target="_blank">Download Resume</a>
+    </div>
   </header>
 
-  <main>
-    <h2>Hello World!</h2>
-    <p>This is my first website hosted on <b>GitHub Pages</b>.</p>
-    <img src="images/sample.jpg" alt="Sample Image"width="300" height="200">
-    <button onclick="showMessage()">Click Me</button>
-    <p id="output"></p>
-  </main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Short intro about yourself. Where you studied, what you like to do, your goals.</p>
+    <ul>
+      <li>Degree: B.E in Electronics & Communication Engineering</li>
+      <li>Phone: +91 1234567890</li>
+      <li>City: Bengaluru, India</li>
+      <li>Email: youremail@example.com</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python — 60%</li>
+      <li>Linux — 70%</li>
+      <li>AWS — 50%</li>
+      <li>C / C++ — 70%</li>
+      <li>Embedded Systems — 65%</li>
+      <!-- add more -->
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project Title 1</h3>
+      <p>Short description what it does.</p>
+      <p><strong>Technologies:</strong> list e.g. C, Python, AWS</p>
+      <a href="#">Project link or GitHub</a>
+    </div>
+    <!-- add more project divs -->
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates / Badges</h2>
+    <div class="certs">
+      <img src="images/cert1.jpg" alt="Certificate 1">
+      <img src="images/cert2.jpg" alt="Certificate 2">
+      <!-- etc -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: youremail@example.com</p>
+    <p>Phone: +91 1234567890</p>
+    <!-- maybe add LinkedIn / GitHub links -->
+  </section>
 
   <footer>
-    <p>© 2025 My Website</p>
+    <p>© 2025 Your Name</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
