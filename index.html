@@ -1,83 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sooraj Naik - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Gopal Naik</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>Sooraj Naik</h1>
-      <p>Electronics & Communication Engineer | Cloud & Embedded Enthusiast</p>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certs">Certificates</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="mainDiv">
+      <nav class="sidebar">
+        <div class="profileImg">
+          <img  class="rounded-circle shadow-4-strong img-fluid "  src="images/gopal.jpeg" alt="profile">
+        </div>
+        <h3 class="name">Gopal Vaman Naik</h3>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/gopal-naik-35b630202" class="socialLink" ><div class="icon"><i class="fa fa-linkedin"></i></div></a>
+          <a href="mailto:gopalvamannaik@gmail.com" class="socialLink"><div class="icon"><i class="fa fa-envelope"></i></div></a>
+          <a href="https://www.instagram.com/ajju_ajaynaik?igshid=OGQ5ZDc2ODk2ZA==" class="socialLink" ><div class="icon"><i class="fa fa-instagram"></i></div></a>
+          <a href="https://wa.me/+918971125701" class="socialLink" ><div class="icon"><i class="fa fa-whatsapp"></i></div></a>
+          <a href="https://github.com/GopalNaik78" class="socialLink" ><div class="icon"><i class="fa fa-github"></i></div></a>
+        </div>
+        <div  class="pageContent ">
+          <ul class="pageList">
+            <li><a href="#home" class="nav-link scrollto active"><i class="fa fa-home"></i> <span >Home</span></a></li>
+            <li><a href="#about" class="nav-link scrollto"><i class="fa fa-user"></i> <span>About</span></a></li>
+            <li><a href="#skills" class="nav-link scrollto"><i class="fa fa-cogs"></i> <span>Skills</span></a></li>
+            <li><a href="#resume" class="nav-link scrollto"><i class="fa fa-file"></i> <span>Resume</span></a></li>
+            <li><a href="#Badge" class="nav-link scrollto"><i class="fa fa-id-badge"></i> <span>Badges</span></a></li>
+            <li><a href="#contect" class="nav-link scrollto"><i class="fa fa-envelope"></i> <span>Contact</span></a></li>
+          </ul>
+        </div>
       </nav>
+      <div class="mainBody">
+        <div id="home">
+          <button class="hire-button but1" onclick="window.location.href='mailto:gopalvamannaik@gmail.com';">Hire Me</button>
+          <a href="Gopal_Vaman_Naik_Resume.pdf" download><button class="download-button but1">Download Resume</button></a>
+          
+          <img class="background-img" src="images/gopalFull.png" alt="bg">
+        </div>
+        <div id="about" class="subSection">
+          <h1 class="subTitle" >About</h1>
+          <div class="space1"></div>
+          <p> Self-motivated and confident independent engineering student, dedicated to pursuing excellence through a proactive approach to learning and problem-solving. Passionate about innovation and committed to continuous growth in both academic and practical settings.</p>
+          <div class="row">
+            <div class="col-lg-4 p-0">
+              <img src="images/gopal.jpeg" alt="" class="img-fluid aboutImg">
+            </div>
+            <div class="col-lg-8">             
+                  <ul class="aboutList">
+                    <li><i class="fa fa-chevron-right"></i> <strong>Birthday:</strong> <span>19 April 2001</span></li>
+                    <li><i class="fa fa-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
+                    <li><i class="fa fa-chevron-right"></i> <strong>Degree:</strong> <span>B.E (Final Year)</span></li>
+                    <li><i class="fa fa-chevron-right"></i> <strong>Phone:</strong> <span>+91 8971125701</span></li>
+                    <li><i class="fa fa-chevron-right"></i> <strong>City:</strong> <span>Bangalore, India</span></li>
+                    <li><i class="fa fa-chevron-right"></i> <strong>Email:</strong> <span>gopalvamannaik@gmail.com</span></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="skills section-bg subSection">
+        <div class="container">
+
+        <div class="section-title">
+          
+          <h1 class="subTitle">Skills</h1>
+          <div class="space1"></div>
+          <p>Fast Learner and Adaptable Professional: Proven ability to quickly grasp new concepts, technologies, and methodologies. Adept at adjusting to evolving industry trends and seamlessly incorporating new skills into my repertoire.
+          </p>
+        </div>
+
+        <div class="row skills-content">
+          <div class="col-lg-6" data-aos="fade-up">
+            <span>JAVA <span class="val">80%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar java"></div>
+            </div>
+            <span>HTML <span class="val">95%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar html"></div>
+            </div>
+            <span>CSS <span class="val">80%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar css"></div>
+            </div>
+            <span>JAVASCRIPT <span class="val">60%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar js"></div>
+            </div>
+            <span>Python<span class="val">50%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar python"></div>
+            </div>
+            <span>IoT<span class="val">70%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar iot"></div>
+            </div>
+            <span>Photography<span class="val">95%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar photograph"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <span>Spring Boot <span class="val">75%</span> </span>
+            <div class="skill-container">
+              <div class="skillBar sb"></div>
+            </div>
+            <span>DSA <span class="val">70%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar dsa"></div>
+            </div>
+            <span>Computer Networks<span class="val">75%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar cn"></div>
+            </div>
+            <span>SQL <span class="val">70%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar sql"></div>
+            </div>
+            <span>DBMS <span class="val">75%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar dbms"></div>
+            </div>
+            <span>AWS <span class="val">60%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar aws"></div>
+            </div>
+            <span>Embedded System <span class="val">80%</span> </span>
+            <div class="skill-container">
+                <div class="skillBar esd"></div>
+            </div>   
+<!--            <span>Photoshop <span class="val">50%</span> </span>-->
+<!--            <div class="skill-container">-->
+<!--                <div class="skillBar ps"></div>-->
+<!--            </div>  -->
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="resume" class="subSection">
+        <h1 class="subTitle">Resume</h1>
+        <div class="space1"></div>
+        <p>A result-oriented, hardworking, and self-motivated B.E student, looking for a challenging career where I can implement my coding knowledge to enhance my skills further. Good understanding of Java, Spring Boot, Cloud, HTML, CSS, JS, SQL, and OS. Furthermore, I can quickly learn and adapt new skills and technology dynamically.</p>
+        <div id="eduInt" class="row">
+          <div class="col-lg-6 p-0">
+            <div class="education">
+              <h2>Education</h2>
+              <div class="resumeItem">
+                <h3>B.E.</h3>  
+                <h7 class="date">2021 - 2024</h7>             
+                <h5>RV College of Engineering</h5>
+                <h7>Bangalore, India.</h7><br>
+                <h7>Electronics and Communication Engineering</h7>
+              </div>
+              <div class="resumeItem">
+                <h3>Diploma</h3>  
+                <h7 class="date">2017 - 2020</h7>
+                <h5>Shree Vidyadhiraj Polytechnic</h5>
+                <h7>Kumta, India</h7><br>
+                <h7>Electronics and Communication Engineering</h7>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <div class="internship">
+              <h2>Internship</h2>
+              <div class="resumeItem">
+                <h3>Embedded System Design</h3>  
+                <h7 class="date">Jan 2021 - Jun 2021</h7>             
+                <h5>MITRONTECH</h5>
+                <h7>Bangalore, India.</h7>
+                <ul>
+                  <li>I worked on customer projects from start to finish, including design, implementation, and testing.</li>
+                  <li>Maintained real-time Embedded systems, including troubleshooting and resolving issues.</li>
+                  <li>Designed and implemented solutions for multiple domains, including the Air Force and Indian Railways.</li>
+                  <li>Worked with a team of engineers to design and implement complex systems.</li>
+                  <li>Provided technical support to customers.</li>
+                  <li>Learned about the latest Embedded systems technologies and best practices.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="projects">
+            <h3 class="pro_head">Projects</h3>
+
+            <div class="resumeItem bl" >
+              <h4>Blogging Web App </h4>
+              <a style="font-size:medium;" href="https://github.com/GopalNaik78/Blogging-App.git">
+                <i class="fa fa-github"></i>github</a>
+              <br>
+              <h7 class="date">April 2024</h7>
+              <h5>Project Overview:</h5>
+              <ul>
+                <li>Developed a backend blogging web app using Spring Boot and Java, featuring user authentication, article CRUD operations, tagging, comments, and responsive design.</li>
+              </ul>
+              <h5>Key Features:</h5>
+              <ul>
+                <li>User authentication and profile management</li>
+                <li>Article creation, editing, and deletion</li>
+                <li>Tagging and categorization of articles</li>
+                <li>Comments section for user engagement</li>
+                <li>Security Features </li>
+              </ul>
+              <h5>Technologies:</h5>
+              <ul>
+                <li>Java, Spring Boot, Spring Data JPA, JWT Authentication, Hibernate, Git</li>
+              </ul>
+              <div class="bottom-space"></div>
+            </div>
+
+              <div class="resumeItem">
+                <h4>Network Devices  Monitoring Dashboard </h4>  
+                  <a style="font-size:medium;" href="https://github.com/GopalNaik78/NetworkDashboard.git">
+                    <i class="fa fa-github"></i>github</a>
+                  <br>
+                <img id="myImg" src="images/mainDahboard.png" alt="" class="img-fluid pro2 myImg" style="border: 1px solid black;">
+                <h7 class="date">Nov 2023 - Dec 2023</h7>             
+                <h5>Project Overview:</h5>
+                <ul>
+                <li>Developed a comprehensive Network Dashboard for real-time monitoring and analysis of network health.</li>
+                <li>Utilized web technologies, including HTML, CSS, JavaScript, Java, SQL and AWS, to create an interactive and user-friendly interface.</li>
+                </ul>
+                <h5>Data Visualization:</h5>
+                <ul>
+                <li>Implemented dynamic charts using the Chart.js library to visualize key network metrics such as latency, throughput, packet loss rate, and device uptime.</li>
+                <li>Employed various chart types, including line charts, scatter plots, and bar charts, to provide a holistic view of network performance.</li>
+                </ul>
+                <h5>Device Status Monitoring:</h5>
+                <ul>
+                  <li>Developed status indicators (online/offline) using donut charts for routers, switches, and servers, offering an immediate overview of device health.</li>
+                </ul>
+                <h5>Alert System:</h5>
+                <ul>
+                  <li>Implemented an alert system that dynamically populates an alert table with active issues, facilitating quick issue identification and resolution.</li>
+                </ul>
+                <h5>Device Information Carousel:</h5>
+                <ul><li>Designed an interactive carousel to showcase detailed information about each network device, providing additional insights into device type, status, and IP address.</li></ul>
+                <h5>Backend Integration:</h5>
+                <ul><li>Integrated the frontend with a backend server to fetch device status, health metrics, and other relevant data.</li></ul>
+                <div class="bottom-space"></div>
+              </div>
+              <div class="resumeItem bl">
+                <h4>Development of Real-Time Crop Cultivation and Nutrient Recommendation System</h4> 
+                <a style="font-size:medium;" href="https://github.com/GopalNaik78/Crop-Cultivation-System.git">
+                  <i class="fa fa-github"></i>github</a>
+                <br> 
+                <h7 class="date">Jun 2023 - Aug 2023</h7>  
+                <img id="myImg" src="images/Agree.jpeg" alt="" class="img-fluid pro2 myImg">           
+                <h5>Project Overview:</h5>
+                <ul>
+                  <li>Spearheaded the development of an innovative Real-Time Crop Cultivation and Nutrient Recommendation System, leveraging cutting-edge technologies in IoT (Internet of Things), Machine Learning (ML), and cloud computing.</li>
+                </ul>
+                <h5>Problem Statement:</h5>
+                <ul>
+                  <li>Unavailability of a portable device for the nutrient recommendation which provides instant result for a user specified crop with sensor data as input.</li>
+                </ul>
+                <h5>Technological Integration:</h5>
+                <ul>
+                  <li>Integrated NPK sensors and ESP32 microcontroller to create a portable and user-friendly solution for real-time data collection in agricultural fields.</li>
+                  <li>Established seamless communication between hardware components and cloud databases for efficient data processing.</li>
+                </ul>
+                <h5>ML Algorithm Implementation:</h5>
+                <ul>
+                  <li>Implemented advanced ML algorithms, including Naive Bayes, to analyze NPK sensor data and generate accurate predictions regarding the most suitable crops for specific land.</li>
+                </ul>
+                <h5>Cloud Computing:</h5>
+                <ul>
+                  <li>Utilized AWS Elastic Compute Cloud (AWS EC2) for hosting and deploying ML algorithms, ensuring scalability and reliability in processing large datasets.</li>
+                </ul>
+                <h5>Mobile Application Development:</h5>
+                <ul>
+                  <li>Developed a user-friendly mobile application using MIT App Inventor, providing farmers with a convenient interface to access real-time soil health data and make informed decisions.</li>
+                </ul>
+                <div class="bottom-space"></div>
+              </div>
+              <div class="resumeItem">
+                <h4>Home Automation System</h4>  
+                <a style="font-size:medium;" href="https://github.com/GopalNaik78/Home-Automation.git">
+                  <i class="fa fa-github"></i>github</a>
+                <br>
+                <img id="myImg" src="images/homeApp.jpg" alt="img" class="img-fluid pro2 appImg myImg" >
+                <h7 class="date">Sep 2021 - Dec 2021</h7> 
+                <ul>
+                  <li>Architected IoT-based Home Automation System, that allows users to control their devices using a mobile app.</li>
+                  <li>Custom designs Based on Customer requirements.</li>
+                  <li>Tools used: Firebase, ESP32 controller, MIT App Inventor, EasyEDA, Arduino IDE.</li>
+                </ul>
+                <div class="bottom-space"></div>
+              </div>
+              <div class="resumeItem bl">
+                <h4>Real-time Railroad Crossings Safety System - Indian Railway </h4>  
+                <h7 class="date">Jan 2021 - Jun 2021</h7> 
+                <ul>
+                  <img src="images/rail_2.jpg" alt="img" class="img-fluid pro2 myImg">
+                  <li>Developed and maintained a real-time Railroad Crossings Safety System to improve public safety and reduce work complexity for railway employees.</li>
+                  <li>The system uses automation to track trains and secure the railroad crossings, reducing the risk of accidents.</li>
+                  <li>Integrated data analytics tools to generate comprehensive reports on train movements, crossing activities, and system performance.</li>
+                  <li>24/7 System Monitoring and Supports</li>
+                </ul>
+                <div class="bottom-space"></div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+        <section id="Certificate" class="subSection">
+          <div class="photoBlock">
+            <h1 class="subTitle">Certificate's</h1>
+            <div class="space1"></div>
+            <p>"Certifications: Proven expertise, ready to shine in any endeavor."
+<!--            <h8>-->
+<!--            <ul class="certificate-list">-->
+<!--              <li><a href="#certificate1">Spring Boot Essential</a></li>-->
+<!--              <li><a href="#certificate2">Programming In Java</a></li>-->
+<!--              <li><a href="#certificate3">SQL Basic</a></li>-->
+<!--              <li><a href="#certificate1">Introduction to Packet Tracer</a></li>-->
+<!--              <li><a href="#certificate2">Introduction to IoT</a></li>-->
+<!--              <li><a href="#certificate3">Python Essentials 1</a></li>-->
+<!--              <li><a href="#certificate2">Operating Systems Basics</a></li>-->
+<!--              <li><a href="#certificate3">My SQL Basics</a></li>-->
+<!--              <li><a href="#certificate1">Programming with Python</a></li>-->
+<!--            </ul>-->
+<!--          </h8>-->
+            </p>
+          </div>
+          <section>
+            <div class="imgs0 carousel" data-flickity='{"pageDots": true, "wrapAround": true , "groupCells": 1,"autoPlay": true}'>
+              <div class="carousel-imgs0"><img class="myImg" src="certificate/Programming%20with%20Python%20Internshala.jpg" alt="img2"></div>
+              <div class="carousel-imgs0"><img class="myImg" src="certificate/NPTEL_JAVA.jpg" alt="img3"></div>
+              <div class="carousel-imgs0"><img class="myImg" src="certificate/Introduction_to_Packet_Tracer_Badge.jpg" alt="img7"></div>
+              <div class="carousel-imgs0"><img class="myImg" src="certificate/Introduction_to_IoT_Badge2.jpg" alt="img5"></div>
+              <div class="carousel-imgs0"><img class="myImg" src="certificate/Operating_Systems_Basics_Badge.jpg" alt="img6"></div>
+              <div class="carousel-imgs0"><img class="myImg" src="certificate/Python_Essentials_1_Badge.jpg" alt="img7"></div>
+              <div class="carousel-imgs0"><img class="myImg" src="certificate/Spring-certificate.png" alt="img8"></div>
+              <div class="carousel-imgs0"><img class="myImg" src="certificate/SQL_1.jpg" alt="img7"></div>
+              <div class="carousel-imgs0"><img class="myImg" src="certificate/sql_basic%20certificate.jpg" alt="img8"></div>
+            </div>
+          </section>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+          </div>
+        </section>
+
+
+
+      <section id="Badge" class="subSection">
+        <h1 class="subTitle">Badges</h1>
+        <div class="space1"></div>
+        <div class="allBadge">
+          <div class="badgeBox">
+            <img src="images/Badges/introduction-to-iot.png" alt="" class="img-fluid cbedge left">
+            <a href="https://www.credly.com/badges/2faace5d-3d10-46ab-8c20-009990daad99/public_url" class="BadgeLink"><h3>Introduction to IoT</h3></a>
+            <p class="noMarg">Issued by <a href="https://www.credly.com/organizations/cisco/badges">Cisco</a></p>
+            <span class="BSkill">Skills :</span>
+            <div class="BSkillBox"><div class="BSkills" >IoT</div><div class="BSkills" >Internet Of Things</div>
+              <div class="BSkills" >Digital Transformation
+            </div></div>
+          </div>
+          <div class="badgeBox">
+            <img src="images/Badges/introduction-to-packet-tracer.png" alt="" class="img-fluid cbedge right">
+            <a href="https://www.credly.com/badges/dbe5ebcd-4de5-42b9-8189-7dcaf650c4be/public_url" class="BadgeLink"><h5>Introduction to Packet Tracer</h5></a>
+            <p class="noMarg">Issued by <a href="https://www.credly.com/organizations/cisco/badges">Cisco</a></p>
+            <span class="BSkill">Skills :</span>
+            <div class="BSkillBox">
+              <div class="BSkills" >Cisco Packet Tracer</div>
+              <div class="BSkills" >IoT Simulation</div>
+              <div class="BSkills" >Network Simulation</div>
+            </div>
+          </div>
+          <div class="badgeBox">
+            <img src="images/Badges/operating-systems-basics.png" alt="" class="img-fluid cbedge left">
+            <a href="https://www.credly.com/badges/fc90107c-3836-4665-9ce5-0500db64a025/public_url" class="BadgeLink"><h5>Operating Systems Basics</h5></a>
+            <p class="noMarg">Issued by <a href="https://www.credly.com/organizations/cisco/badges">Cisco</a></p>
+            <span class="BSkill">Skills :</span>
+            <div class="BSkillBox">
+              <div class="BSkills" >Windows</div>
+              <div class="BSkills" >Operating System Security</div>
+              <div class="BSkills" >Linux</div>
+              <div class="BSkills" >Mobile Network Connectivity</div>
+            </div>
+          </div>
+          <div class="badgeBox">
+            <img src="images/Badges/python-essentials-1.1.png" alt="" class="img-fluid cbedge right">
+            <a href="https://www.credly.com/badges/287256ac-690d-4057-9e72-31751be36a10/public_url" class="BadgeLink"><h5>Python Essentials 1</h5></a>
+            <p class="noMarg">Issued by <a href="https://www.credly.com/organizations/cisco/badges">Cisco</a></p>
+            <span class="BSkill">Skills :</span>
+            <div class="BSkillBox">
+              <div class="BSkills" >Algorithmic Thinking</div>
+              <div class="BSkills" >Analytical Thinking</div>
+              <div class="BSkills" >Basic Python Programming</div>
+              <div class="BSkills" >Entry-level</div>
+              <div class="BSkills" >Entry-level</div>
+              <div class="BSkills" >Computer Programming</div>
+            </div>
+          </div>
+          <div class="badgeBox">
+            <img src="images/Badges/aws-knowledge-cloud-essentials.png" alt="" class="img-fluid cbedge left">
+            <a href="https://www.credly.com/badges/80a8c7ff-31b2-45ea-8e8c-2e6d4f8f632d/public_url" class="BadgeLink"><h5>AWS Knowledge: Cloud Essentials</h5></a>
+            <p class="noMarg">Issued by <a href="https://www.credly.com/organizations/amazon-web-services/badges">Amazon Web Services Training and Certification</a></p>
+            <span class="BSkill">Skills :</span>
+            <div class="BSkillBox">
+              <div class="BSkills" >Amazon Web Services (AWS)</div>
+              <div class="BSkills" >AWS Cloud</div>
+              <div class="BSkills" >AWS Compute</div>
+              <div class="BSkills" >AWS Databases</div>
+              <div class="BSkills" >AWS Networking</div>
+              <div class="BSkills" >AWS Security</div>
+              <div class="BSkills" >AWS storage</div>
+            </div>
+          </div>
+          <div class="badgeBox">
+            <img src="images/Badges/aws-cloud-quest-cloud-practitioner.png" alt="" class="img-fluid cbedge right">
+            <a href="https://www.credly.com/badges/23af56c0-5a6b-496b-86c9-d107e446d18d/public_url" class="BadgeLink"><h5>AWS Cloud Quest: Cloud Practitioner</h5></a>
+            <p class="noMarg">Issued by <a href="https://www.credly.com/organizations/amazon-web-services/badges">Amazon Web Services Training and Certification</a></p>
+            <span class="BSkill">Skills :</span>
+            <div class="BSkillBox">
+              <div class="BSkills" >Amazon Web Services (AWS)</div>
+              <div class="BSkills" >AWS Cloud</div>
+              <div class="BSkills" >AWS Cloud Computing</div>
+              <div class="BSkills" >AWS Cloud Foundations</div>
+              <div class="BSkills" >Cloud Platform</div>
+            </div>
+          </div>          
+        </div>
+      </section>
+      <section id="Photography" class="subSection">
+        <div class="photoBlock">
+          <h1 class="subTitle">Photography</h1>
+        <div class="space1"></div>
+        <p>“I am not interested in shooting new things – I am interested to see things new.”
+        <h5>— Ernst Haas</h5>
+        </p>
+        </div>
+        <section>
+          <div class="imgs1 carousel" data-flickity='{"pageDots": false, "wrapAround": true , "groupCells": 1,"autoPlay": true, "pauseAutoPlayOnHover": false  }'>
+            <div class="carousel-imgs1"><img class="myImg" src="images/hieght/1.jpg" alt="img1"></div>
+            <div class="carousel-imgs1"><img class="myImg" src="images/hieght/2.jpg" alt="img2"></div>
+            <div class="carousel-imgs1"><img class="myImg" src="images/hieght/3.jpg" alt="img3"></div>
+            <div class="carousel-imgs1"><img class="myImg" src="images/hieght/5.jpg" alt="img5"></div>
+            <div class="carousel-imgs1"><img class="myImg" src="images/hieght/6.jpg" alt="img6"></div>
+            <div class="carousel-imgs1"><img class="myImg" src="images/hieght/7.jpg" alt="img7"></div>
+            <div class="carousel-imgs1"><img class="myImg" src="images/hieght/8.jpg" alt="img8"></div>
+          </div>
+        </section>
+        <section>
+          <div class="imgs2 carousel" data-flickity='{"pageDots": false, "wrapAround": true , "groupCells": 1,"autoPlay": true}'>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/1.jpg" alt="img1"></div>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/2.jpg" alt="img2"></div>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/3.jpg" alt="img3"></div>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/4.jpg" alt="img7"></div>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/5.jpg" alt="img5"></div>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/6.jpg" alt="img6"></div>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/7.jpg" alt="img7"></div>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/8.jpg" alt="img8"></div>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/9.jpg" alt="img7"></div>
+            <div class="carousel-imgs2"><img class="myImg" src="images/width/10.jpg" alt="img8"></div>
+          </div>
+        </section>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+        </div>
+      </section>
+      <section id="contect" class="subSection">
+        <h1 class="subTitle">Contact</h1>
+        <div class="space1"></div>
+        <div class="contects">
+          <a href="mailto:gopalvamannaik@gmail.com" class="contectLink"><div class=""><i class="fa fa-envelope"></i> gopalvamannaik@gmail.com</div></a>
+          <a href="https://wa.me/+918971125701" class="contectLink"><div class=""><i class="fa fa-phone"></i> +91 8971125701</div></a>
+        </div>
+      </section>
+        </div>
     </div>
-  </header>
-
-  <!-- About -->
-  <section id="about" class="card">
-    <h2>About Me</h2>
-    <p>I am an Electronics and Communication Engineering student with a passion for Cloud Computing, DevOps, and Embedded Systems. I love building IoT-based projects and solving real-world problems with technology.</p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="card">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li><span>Python</span><div class="bar"><div style="width:60%"></div></div></li>
-      <li><span>Linux</span><div class="bar"><div style="width:70%"></div></div></li>
-      <li><span>AWS</span><div class="bar"><div style="width:50%"></div></div></li>
-      <li><span>C / C++</span><div class="bar"><div style="width:70%"></div></div></li>
-      <li><span>Embedded Systems</span><div class="bar"><div style="width:65%"></div></div></li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="card">
-    <h2>Projects</h2>
-    <h3>Weather Monitoring System</h3>
-    <p>Monitors temperature, humidity, pressure, and rainfall using ESP32 and sensors. Displays data on LCD and mobile app.</p>
-    <p><b>Technologies:</b> ESP32, DHT11, BMP180, AWS, Blynk</p>
-    <a href="https://github.com/soorajnaik/my-project" class="btn" target="_blank">View on GitHub</a>
-  </section>
-
-  <!-- Certificates -->
-  <section id="certs" class="card">
-    <h2>Certificates</h2>
-    <div class="certs">
-      <img src="images/certificate1.png" alt="Certificate 1">
-      <img src="images/certificate2.png" alt="Certificate 2">
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="card">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    <p>Phone: +91 1234567890</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Sooraj Naik | Made with ❤️</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
