@@ -1,43 +1,40 @@
-// Smooth scroll
-document.querySelectorAll('nav a').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href'))
-      .scrollIntoView({ behavior: 'smooth' });
-  });
-});
+    var modal = document.getElementById("myModal");
+      var images = document.querySelectorAll(".myImg");
+      var modalImg = document.getElementById("img01");
+      var span = document.getElementsByClassName("close")[0];
 
-// Dark mode toggle
-const footer = document.querySelector('footer');
-const btn = document.createElement('button');
-btn.innerText = "🌙 Toggle Dark Mode";
-btn.className = "btn";
-btn.style.marginLeft = "10px";
-footer.appendChild(btn);
+      images.forEach(function (img, index) {
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
 
-btn.addEventListener('click', () => {
-  document.body.classList.toggle("dark-mode");
-});
+          // Reset styles to handle resizing
+          modalImg.style.width = "auto";
+          modalImg.style.height = "auto";
 
-// Dark mode style
-const style = document.createElement('style');
-style.innerHTML = `
-.dark-mode {
-  background: #222;
-  color: #eee;
-}
-.dark-mode .card {
-  background: #333;
-  color: #eee;
-}
-.dark-mode header, .dark-mode footer {
-  background: #111;
-}
-.dark-mode .bar div {
-  background: #00c6ff;
-}
-`;
-document.head.appendChild(style);
+          var aspectRatio = this.naturalWidth / this.naturalHeight;
+          var maxWidth = window.innerWidth * 0.8;
+          var maxHeight = window.innerHeight * 0.8;
 
+          // Determine whether to limit width or height based on aspect ratio
+          if (aspectRatio > 1) {
+            modalImg.style.width = maxWidth + "px";
+          } else {
+            modalImg.style.height = maxHeight + "px";
+          }
+        };
+      });
+
+      // Close the modal when the close button is clicked
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // Close the modal when the user clicks outside the modal content
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      };
 
 
