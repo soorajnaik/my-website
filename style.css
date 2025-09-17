@@ -81,10 +81,12 @@ body{
       display: grid;
       grid-template-rows: auto;
     }
-    .background-img{
-      height:100vh;
-      width: 100%;
-      object-fit:cover;
+    .background-img {
+  max-width: 100%;
+  width: 1000px;   /* try 800, 1000, 1200 etc */
+  height: auto;
+}
+
       
     }
     button {
@@ -547,6 +549,7 @@ body{
 }
 
     
+
 
 
 
