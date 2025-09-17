@@ -542,10 +542,18 @@ body{
     top: 10px; /* Adjust the position of the close button for mobile */
     right: 15px;
     font-size: 30px;
+      .background-img {
+  width: 300px;   /* adjust size */
+  height: auto;   /* keeps aspect ratio */
+  display: block;
+  margin: 20px auto; /* centers it */
+}
+
   }
 }
 
     
+
 
 
 
