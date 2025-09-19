@@ -199,20 +199,20 @@ body{
     }
 
 
-    .java {width: 80%; }
-    .html {width: 95%; }
-    .css {width: 80%;}
-    .js {width: 60%;}
-    .python {width: 50%; }
-    .iot {width: 70%; }
-    .dsa {width: 70%;}
-    .cn {width: 75%;}
-    .sql {width: 70%; }
+    .ES {width: 70%; }
+    .IoT {width: 70%; }
+    .aws {width: 60%;}
+    .python {width: 50%;}
+    .c program {width: 65%; }
+    .iot {width: 60%; }
+    .dsa {width: 50%;}
+    .cn {width: 65%;}
+    .sql {width: 60%; }
     .dbms {width: 75%; }
     .aws {width: 60%;}
     .esd {width: 80%;}
-    .photograph {width: 95%;}
-    .sb {width: 75%;}
+    .photograph {width: 70%;}
+    .sb {width: 70%;}
 
     .resumeItem::before {
       content: "";
@@ -548,6 +548,7 @@ body{
     
 
     
+
 
 
 
