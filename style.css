@@ -203,16 +203,16 @@ body{
     .IoT {width: 70%; }
     .aws {width: 60%;}
     .python {width: 50%;}
-    .c program {width: 65%; }
-    .iot {width: 60%; }
-    .dsa {width: 50%;}
-    .cn {width: 65%;}
-    .sql {width: 60%; }
-    .dbms {width: 75%; }
-    .aws {width: 60%;}
-    .esd {width: 80%;}
-    .photograph {width: 70%;}
-    .sb {width: 70%;}
+    .cprogram {width: 65%; }
+    .linux {width: 60%; }
+    .mysql {width: 50%;}
+    .pcbdesign {width: 65%;}
+    .verilog{width: 60%; }
+    .cn {width: 75%; }
+    .aide {width: 60%;}
+    .de {width: 80%;}
+    .kicad {width: 70%;}
+    .LT {width: 70%;}
 
     .resumeItem::before {
       content: "";
@@ -548,6 +548,7 @@ body{
     
 
     
+
 
 
 
